@@ -1,7 +1,6 @@
 mod commands;
 
 use std::env;
-use std::io::prelude::*;
 
 fn main() {
     let args: Vec<String> = env::args().collect();

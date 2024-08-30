@@ -58,7 +58,7 @@ cli_utils find /path/to/search -name "filename"
 Searches for a pattern within files:
 
 ```bash
-cli_utils grep "search_term" file.txt
+cli_utils grep file.txt "search_term"
 ```
 
 ## Contributing
