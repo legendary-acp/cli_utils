@@ -15,10 +15,15 @@ use std::path::Path;
 pub fn execute(dirs: &[String]) {
     for dir in dirs {
         if dir == "." {
-            println!("Present working directory contains following content:");
+            println!("\nPresent working directory contains following content:");
         } else {
-            println!("{} contains following content:", dir);
+            println!("\n{} contains following content:", dir);
         }
+        list_dir(dir);
+    }
+    if dirs.len() == 0 {
+        println!("Present working directory contains following content:");
+        let dir = &String::from(".");
         list_dir(dir);
     }
 }
